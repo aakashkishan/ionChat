@@ -1,10 +1,15 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# IonChat 
+> A Chat Application using Ionic v3 with a sophisticated suite of functionalities.
 
-## How to use this template
+## Demo
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+## Features
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+## Installation
+ 
+## Output ScreenShot
+
+## Reference
 
 ### With the Ionic CLI:
 
