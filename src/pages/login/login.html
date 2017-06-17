@@ -9,7 +9,7 @@
 
   <!--Appligation Navigation-->
   <ion-navbar color="headerColor">
-    <ion-title color="dark">ionChat Login</ion-title>
+    <ion-title color="dark">ionChat</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -44,16 +44,14 @@
         <br>
 
         <!--Login Button-->
-        <ion-item>
-          <button ion-button block round outline color="danger" (click)="login()">LOGIN</button>
-        </ion-item>
+        <button ion-button block round outline color="danger" (click)="login()">LOGIN</button>
+        <br>
 
-        <b>OR</b>
+        <p><b>OR</b></p>
 
+        <br>
         <p>Don't have an Account?</p>
-        <ion-item>
-          <button ion-button block round outline color="danger" (click)="signup()">SIGN UP</button>
-        </ion-item>
+        <button ion-button block round outline color="danger" (click)="toSignup()">SIGN UP</button>
 
       </ion-list>
     </ion-card-content>

@@ -43,7 +43,7 @@ export class LoginPage {
   }
 
   // The SignUp Function to handle the LoginPage's SignUp
-  signup() {
+  toSignup() {
     // Redirect to the SignUp Page
     this.navCtrl.push('SignupPage');
   }

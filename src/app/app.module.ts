@@ -14,6 +14,7 @@ import { fireBaseConfig } from './app.angularfireconfig'
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { AuthenticatorProvider } from '../providers/authenticator/authenticator';
+import { UserProvider } from '../providers/user/user';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { AuthenticatorProvider } from '../providers/authenticator/authenticator'
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AuthenticatorProvider,
-    AngularFireAuth
+    AngularFireAuth,
+    UserProvider
   ]
 })
 export class AppModule {}
