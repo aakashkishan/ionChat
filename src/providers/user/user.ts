@@ -41,7 +41,7 @@ export class UserProvider {
           }).then(() => {
 
             // Here we resolve the promise if it is successful
-            resolve(true);
+            resolve({success: true});
           }).catch((error) => {
             // In case of Failure
             reject(error);
