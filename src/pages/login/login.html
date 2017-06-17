@@ -1,0 +1,63 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!--Application Header-->
+<ion-header>
+
+  <!--Appligation Navigation-->
+  <ion-navbar color="headerColor">
+    <ion-title color="dark">ionChat Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="app-background">
+
+  <!--Login Card-->
+  <ion-card>
+
+    <!--Ion Card Header-->
+    <ion-card-header>
+      <h1>Login Credentials</h1>
+    </ion-card-header>
+
+    <!--Ion Card Content-->
+    <ion-card-content>
+      <ion-list no-lines>
+
+        <!--Login Input Credentials-->
+        <ion-item>
+          <!--We are referencing the Credentials Object in the input ngModel Email-->
+          <ion-input type="email" name="Email" placeholder="Email Address" [(ngModel)]="Credentials.email"></ion-input>
+        </ion-item>
+        <ion-item>
+          <!--We are referencing the Credentials Object in the input ngModel Password-->
+          <ion-input type="password" name="Password" placeholder="Password" [(ngModel)]="Credentials.pwd"></ion-input>
+        </ion-item>
+
+        <!--Forgot Login Credentials-->
+        <a (click)="forgotCredentials()"> Forgot Login Credentials??</a>
+        <br>
+
+        <!--Login Button-->
+        <ion-item>
+          <button ion-button block round outline color="danger" (click)="login()">LOGIN</button>
+        </ion-item>
+
+        <b>OR</b>
+
+        <p>Don't have an Account?</p>
+        <ion-item>
+          <button ion-button block round outline color="danger" (click)="signup()">SIGN UP</button>
+        </ion-item>
+
+      </ion-list>
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
