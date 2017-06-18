@@ -11,6 +11,16 @@
 
 ## Reference
 
+## Ionic Pages
+* Login Page
+* Signup Page
+* Navigation Page
+* Chatrooms Page
+* Clusters Page
+* Profile Page
+* ProfilePhoto Page
+* ChangePassword Page
+
 ### With the Ionic CLI:
 
 Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
