@@ -42,10 +42,16 @@ export class LoginPage {
     })
   }
 
-  // The SignUp Function to handle the LoginPage's SignUp
+  // The SignUp Method to handle the LoginPage's SignUp
   toSignup() {
     // Redirect to the SignUp Page
     this.navCtrl.push('SignupPage');
+  }
+
+  // The forgotPassword Method to handle the ChangePassword Page
+  forgotPassword() {
+    // Redirect to the ChangePassword Page
+    this.navCtrl.push('ChangepwdPage');
   }
 
 }

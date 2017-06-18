@@ -6,13 +6,24 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>changepwd</ion-title>
+  <ion-navbar color="headerColor">
+    <ion-title>Change Password</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-
+<ion-content class="app-background">
+  <ion-card>
+    <ion-card-header>
+      Password Reset
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-input type="email" placeholder="Email Address" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <button ion-button block round outline color="headerColor" (click)="pwdReset()">Password Reset</button>
+      <button ion-button block round outline color="headerColor" (click)="back()">Password Reset</button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

@@ -39,12 +39,11 @@
           <ion-input type="password" name="Password" placeholder="Password" [(ngModel)]="Credentials.pwd"></ion-input>
         </ion-item>
 
-        <!--Forgot Login Credentials-->
-        <a (click)="forgotCredentials()"> Forgot Login Credentials??</a>
-        <br>
-
         <!--Login Button-->
         <button ion-button block round outline color="danger" (click)="login()">LOGIN</button>
+
+        <!--Forgot Login Credentials-->
+        <p><a (click)="forgotPassword()"> Forgot Login Credentials??</a></p>
         <br>
 
         <p><b>OR</b></p>

@@ -19,6 +19,7 @@ export class UserProvider {
     
   }
 
+  // This Method is for Signing up the User
   signUpee(newUser) { 
 
     // Create a Promise that resolves if the User Credentials are successfully stored
@@ -52,6 +53,27 @@ export class UserProvider {
       }).catch((error) => {
         reject(error);
       }) // End of the OuterMost Catch Block
+    }) // End of Promise
+
+    return promise;
+
+  }
+
+  // This Method is for Reseting the Password of the User
+  resetPwd(email) {
+
+    // Create a Promise that will send the Reset Password to the Email and resolve with Success Scenario
+    var promise = new Promise((resolve, reject) => {
+
+      // We let Firebase take care of sending a Reset Password to the specified Email
+      firebase.auth().sendPasswordResetEmail(email).then(() => {
+        // Boolean Success Scenario
+        resolve(true);
+      }).catch((error) => {
+        // Error JSON
+        reject(error);
+      })
+
     }) // End of Promise
 
     return promise;
